@@ -3,7 +3,7 @@ package com.haxianhe.utils;
 import java.time.LocalDateTime;
 
 /**
- * @author haxianhe <haxianhe@kuaishou.com>
+ * @author haxianhe haxianhe@kuaishou.com
  * Created on 2022-02-17
  */
 public class DateUtils {
