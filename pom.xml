@@ -6,7 +6,7 @@
 
     <groupId>com.haxianhe</groupId>
     <artifactId>dev-utils</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
 
     <name>dev-utils</name>
     <url>https://github.com/haxianhe/dev-utils</url>
