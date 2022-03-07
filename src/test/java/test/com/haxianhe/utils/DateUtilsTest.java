@@ -1,6 +1,10 @@
 package test.com.haxianhe.utils;
 
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.haxianhe.utils.DateTimeUtils;
 
 /**
  * @author haxianhe <haxianhe@kuaishou.com>
@@ -8,8 +12,11 @@ import org.junit.Test;
  */
 
 public class DateUtilsTest {
+    private static final Logger logger = LoggerFactory.getLogger(DateUtilsTest.class);
+
     @Test
     public void getDayOfWeekTest() {
-//        System.out.println("今天是周 " + DateUtils.getDayOfWeek());
+        System.out.println("当前时间 " + DateTimeUtils.currentTime());
+        logger.info("周{}", "一");
     }
 }

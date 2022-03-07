@@ -8,11 +8,16 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author haxianhe haxianhe@kuaishou.com
  * Created on 2022-02-17
  */
 public class DateTimeUtils {
+
+    private static final Logger logger = LoggerFactory.getLogger(DateTimeUtils.class);
 
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyyMMdd");
     private static final DateTimeFormatter FORMATTER_TIME = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -40,6 +45,7 @@ public class DateTimeUtils {
      *  当前的时间，HH:mm:ss
      */
     public static String currentTime() {
+        logger.info("调用方法: {}", "currentTime");
         return LocalTime.now().format(FORMATTER_TIME);
     }
 
